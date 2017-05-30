@@ -1,8 +1,8 @@
 {
   "name": "conditional-ga",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "Use google Analytics helpers, doing the actual event firing only if enabled via either DOM or client side tests",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
     "build": "npm run clean && babel src --out-dir lib",

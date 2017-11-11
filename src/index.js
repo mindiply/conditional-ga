@@ -8,6 +8,9 @@ function _gaCheck () {
 }
 
 export function initGA (propertyId, options = {}) {
+    // In non-browser environment, stop wasting time
+    if (typeof window === 'undefined') return
+
     if (options && options.checkFn && typeof checkFn === 'function') {
         useGa = options.checkFn()
         if (!useGa) return

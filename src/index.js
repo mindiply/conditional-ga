@@ -16,10 +16,12 @@ export function initGA (propertyId, options = {}) {
         if (!useGa) return
     }
     if (options && !options.DISABLE_DOM_CHECK) {
+        if (window.USE_GA === false) return
         useGa = useGa || window.USE_GA === true
     }
     if (options && !options.DISABLE_GLOBAL_SCOPE_CHECK) {
         if (typeof USE_GA !== 'undefined') {
+            if (USE_GA === false) return
             useGa = useGa || USE_GA === true
         }
     }

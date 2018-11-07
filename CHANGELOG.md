@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [0.0.14] - 2018-11-07
+## [0.0.16] - 2018-11-07
 ### New
 - Removed google id code
 - Moved to typescript and generating type definitions

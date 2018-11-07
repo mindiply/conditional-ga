@@ -99,8 +99,8 @@ export function recordScreenRender (screenName: string) {
 export function recordEvent (
     category: string,
     action: string,
-    label: string,
-    value: string | number) {
+    label?: string,
+    value?: string | number) {
     try {
         if (_gaCheck()) {
             ga!('send', 'event', category, action, label, value)
